@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+    Author: Kaiyang Lin
+-->
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Doctor Information:</title>
+        <link rel="stylesheet" type="text/css" href="all.css">
+        <!--import css file-->
+        <link href="https://fonts.googleapis.com/css?family=Ultra&display=swap" rel="stylesheet">
+        <!--import font-->
+    </head>
+    <body>  
+        <div id="main">
+            <!--connect to database-->
+            <h1 id="head">Doctor Management System</h1>
+            <img src="image/NPW-cartoon.jpg" alt="Trulli" width="1000" height="300">
+            <form action="getdata.php" method="post">
+                Order choice:
+                <input type="radio" name="orderName" checked value="first"/>Order by first name
+                <input type="radio" name="orderName" value="last"/>Order by last name
+                <input type="radio" name="orderWay" checked value="asc"/>Order in ascending
+                <input type="radio" name="orderWay" value="dsc"/>Order in descending
+                <input id="00" type="submit" class="sub" value="show List">
+            </form>
+
+            <form action="getdocbydate.php" method="post">
+                Enter date:
+                <input type="date" name="mydate" placeholder="type date here">
+                <input type="submit" class="like" value="show List">
+            </form>
+
+            <form action="adddoc.php" method="POST">
+                Push the button to add doctor:
+                <input type="submit" class="like" value="add Doctor">
+            </form>
+
+            <form action="deletedoc.php" method="POST">
+                Push the button to delete doctor:
+                <input type="submit" class="like" value="delete Doctor">
+            </form>
+
+            <form action="updatehos.php" method="POST">
+                Push the button to update hospital's name:
+                <input type="submit" class="like" value="update hospital's name">
+            </form>
+
+            <form action="showhos.php" method="POST">
+                Push the button to show hospital information:
+                <input type="submit" class="like" value="show hospital's info">
+            </form>
+
+            <form action="showpatient.php" method="POST">
+                Enter the OHIP number to show patient's information:
+                <input type="text" name="onum" maxlength="9" placeholder="type OHIP number here">
+                <input type="submit" class="like" value="show patient">
+            </form>
+
+            <form action="showdoctor.php" method="POST">
+                Push the button to manage doctor:
+                <input type="submit" class="like" value="manage doctor">
+            </form>
+
+            <form action="nopatientdoc.php" method="POST">
+                Push the button to manage doctor:
+                <input type="submit" class="like" value="show no patient doctor">
+            </form>
+
+            References:
+            <a href="https://www.tvovermind.com/how-the-good-doctor-has-evolved-since-season-1/">Graph 1</a>
+            <a href="https://thedo.osteopathic.org/2017/03/national-physicians-week-extending-doctors-day/">Graph 2</a>
+        </div>
+
+
+        <img src="image/good-doctor.jpg" alt="Trulli" width="700" height="400">
+    </body>
+
+
+
+</html>
+
+
+
+

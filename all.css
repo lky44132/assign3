@@ -1,0 +1,36 @@
+/*
+    Author:Kaiyang Lin
+    */
+
+#main{
+    margin-top:130px;
+    color:rgba(130, 123, 226, 0.815);
+    background-color: rgb(216, 159, 90);
+    font-size: 20px;
+    font-style: italic;
+
+}
+#head{
+    font: 'Ultra', serif;
+}
+#show{
+    margin-top:60px;
+    color:royalblue;
+    align-content: center;
+}
+
+body{
+    font-family: 'Ultra', serif;
+    color: green;
+    padding: 10px;
+    background-color: yellowgreen;
+}
+img {
+    border-style: solid;
+    border-color: teal;
+    border-width: 10px;
+    width: 500px;
+    height: 400px;
+}
+
+
